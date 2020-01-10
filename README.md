@@ -8,3 +8,10 @@ I'm calling the distribution onecable, since the goal is to never connect more t
 
 * Docker
 
+## Usage
+
+## First Time
+```
+./bootstrap.sh
+./build-docker.sh
+```
