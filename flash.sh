@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eu
 
 DIST=$(find deploy -name 'image*lite.zip' | head -1)
 if [ -z "$DIST" ]
