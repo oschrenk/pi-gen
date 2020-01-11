@@ -34,3 +34,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo
   eval "$COMMAND"
 fi
+
+echo "Unmounting $DISK"
+diskutil unmountDisk $DISK
