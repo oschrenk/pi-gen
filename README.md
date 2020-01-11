@@ -46,3 +46,17 @@ Flash onto external drive
 ```
 
 The script will assume only a single mounted external drive and will ask you to confirm. Make *sure* that it is writing to the correct drive!
+
+## Troubleshooting
+
+### E: Unable to fetch some archives
+
+There were probably some connectivity issues during the build time. You can continue via
+
+```
+#bash
+CONTINUE=1 ./build-docker.sh
+
+#fish
+env CONTINUE=1 ./build-docker.sh
+```
