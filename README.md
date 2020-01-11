@@ -33,6 +33,16 @@ Skipping stage3 to stage 5
 
 ## Usage
 
+Build the image (~20 minutes)
+
 ```
 ./build-docker.sh
 ```
+
+Flash onto external drive
+
+```
+./flash.sh
+```
+
+The script will assume only a single mounted external drive and will ask you to confirm. Make *sure* that it is writing to the correct drive!
