@@ -28,7 +28,6 @@ FIRST_USER_PASS="********"
 Config written to ./config
 
 Skipping stage3 to stage 5
-
 ```
 
 ## Usage
