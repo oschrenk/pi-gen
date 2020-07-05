@@ -4,7 +4,7 @@ read -sp 'Password: ' FIRST_USER_PASS
 
 echo
 echo "Deleting old config ./config"
-rm config
+rm -f config
 
 echo
 echo 'IMG_NAME=onecable' | tee -a config
