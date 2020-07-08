@@ -12,14 +12,15 @@ echo 'TIMEZONE_DEFAULT=Europe/Amsterdam' | tee -a config
 echo 'LOCALE_DEFAULT="en_US.UTF-8"' | tee -a config
 
 echo
-echo 'HOSTNAME="bramble"' | tee -a config
+echo 'HOSTNAME="node0"' | tee -a config
+echo 'ENABLE_SSH=1' | tee -a config
+echo 'PUBKEY_SSH_FIRST_USER="..."' | tee -a config
+echo 'PUBKEY_ONLY_SSH=1' | tee -a config
 echo
 
 echo "FIRST_USER_NAME=\"$FIRST_USER_NAME\"" | tee -a config
 echo "FIRST_USER_PASS=\"********\""
 echo "FIRST_USER_PASS=\"$FIRST_USER_PASS\"" >> config
-
-echo 'ENABLE_SSH=1' | tee -a config
 
 echo
 echo "Config written to ./config"
