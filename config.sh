@@ -19,6 +19,8 @@ echo "FIRST_USER_NAME=\"$FIRST_USER_NAME\"" | tee -a config
 echo "FIRST_USER_PASS=\"********\""
 echo "FIRST_USER_PASS=\"$FIRST_USER_PASS\"" >> config
 
+echo 'ENABLE_SSH=1' | tee -a config
+
 echo
 echo "Config written to ./config"
 
