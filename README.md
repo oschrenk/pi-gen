@@ -10,19 +10,32 @@ I'm calling the distribution onecable, since the goal is to never connect more t
 
 ## Configuration
 
-Run `./config.sh`. It will ask you for the first user's name and password and set some defaults.
+Run `./config.sh`. It will ask you for
+* the first user's name and
+* password and
+* public ssh key
+
+It will also set some defaults, especially
+* allowing logins only via SSH
 
 ```
 $./config.sh
 Username: john
 Password:
+SSH:
 
 Deleting old config ./config
 
 IMG_NAME=onecable
 TIMEZONE_DEFAULT=Europe/Amsterdam
 LOCALE_DEFAULT="en_US.UTF-8"
-FIRST_USER_NAME="john"
+
+HOSTNAME="node0"
+ENABLE_SSH=1
+PUBKEY_SSH_FIRST_USER="..."
+PUBKEY_ONLY_SSH=1
+
+FIRST_USER_NAME="bee"
 FIRST_USER_PASS="********"
 
 Config written to ./config
