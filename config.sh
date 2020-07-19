@@ -3,6 +3,8 @@ read -p 'Username: ' FIRST_USER_NAME
 read -sp 'Password: ' FIRST_USER_PASS
 echo
 read -sp 'SSH: ' FIRST_USER_SSH
+echo
+read -p 'hostname: ' TARGET_HOSTNAME
 
 echo
 echo "Deleting old config ./config"
@@ -14,7 +16,7 @@ echo 'TIMEZONE_DEFAULT=Europe/Amsterdam' | tee -a config
 echo 'LOCALE_DEFAULT="en_US.UTF-8"' | tee -a config
 
 echo
-echo 'HOSTNAME="node0"' | tee -a config
+echo "TARGET_HOSTNAME=\"$TARGET_HOSTNAME\"" | tee -a config
 echo 'ENABLE_SSH=1' | tee -a config
 echo "PUBKEY_SSH_FIRST_USER=\"$FIRST_USER_SSH\"" | tee -a config
 echo 'PUBKEY_ONLY_SSH=1' | tee -a config
